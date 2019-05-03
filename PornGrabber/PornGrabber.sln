@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PornGrabber", "PornGrabber\PornGrabber.csproj", "{9AEAFC73-578C-4E94-AE04-F918361461B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{E2C4D372-07EB-4265-92CD-FB1F14495054}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AEAFC73-578C-4E94-AE04-F918361461B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AEAFC73-578C-4E94-AE04-F918361461B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AEAFC73-578C-4E94-AE04-F918361461B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AEAFC73-578C-4E94-AE04-F918361461B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C4D372-07EB-4265-92CD-FB1F14495054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C4D372-07EB-4265-92CD-FB1F14495054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C4D372-07EB-4265-92CD-FB1F14495054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C4D372-07EB-4265-92CD-FB1F14495054}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E0E6C9A-E647-49D1-9ED0-28327766EB7F}
+	EndGlobalSection
+EndGlobal
