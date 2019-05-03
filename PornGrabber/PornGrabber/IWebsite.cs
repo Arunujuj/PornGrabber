@@ -8,6 +8,5 @@
 
         string getRandomImage(string categorie);
 
-
     }
 }

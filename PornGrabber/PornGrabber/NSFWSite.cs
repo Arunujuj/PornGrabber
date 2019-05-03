@@ -11,21 +11,10 @@ namespace PornGrabber
         string url = "http://www.hdpornpictures.com/";
         Random random = new Random();
 
-        private string GetHTML(string url)
-        {
-            this.url = url;
-
-            using (WebClient client = new WebClient())
-            {
-                string htmlCode = client.DownloadString(url);
-                return htmlCode;
-            }
-        }
-
         public string[] getCategories(string url)
         {
             var doc = new HtmlDocument();
-            doc.LoadHtml(GetHTML(url));
+            doc.LoadHtml(Tools.GetHTML(url));
 
             var nodes = doc.GetElementbyId("container");
 
@@ -59,7 +48,7 @@ namespace PornGrabber
         public string getRandomImage(string categorie)
         {
             var doc = new HtmlDocument();
-            doc.LoadHtml(GetHTML(url + "/" + categorie));
+            doc.LoadHtml(Tools.GetHTML(url + "/" + categorie));
             var nodes = doc.GetElementbyId("container");
             List<HtmlNode> pureImages = nodes.ChildNodes.Where(x => x.HasClass("giselle")).ToList();
 
@@ -69,7 +58,7 @@ namespace PornGrabber
             {
                 foreach(var actualImage in imageContainer.ChildNodes)
                 {
-                    images[indx] = GetSRC(actualImage.InnerHtml);
+                    images[indx] = Tools.GetSRCTag(actualImage.InnerHtml);
                 }
                 
                 indx++;
@@ -78,21 +67,6 @@ namespace PornGrabber
             return images[random.Next(0, images.Count())];
         }
 
-        private string GetSRC(string innerHtml)
-        {
-            if(innerHtml != "")
-            {
-                string result = "";
-
-                int startIndex = innerHtml.IndexOf("src='") + 5;
-                result = innerHtml.Remove(0, startIndex);
-                int endIndex = result.IndexOf("' ");
-                result = result.Remove(endIndex, result.Length - endIndex);
-
-
-                return result;
-            }
-            return "";
-        }
+        
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{9AEAFC73-578C-4E94-AE04-F918361461B0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NSFWImageGrabber</RootNamespace>
-    <AssemblyName>NSFWImageGrabber</AssemblyName>
+    <RootNamespace>PornGrabber</RootNamespace>
+    <AssemblyName>PornGrabber</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -47,6 +47,7 @@
     <Compile Include="IWebsite.cs" />
     <Compile Include="NSFWSite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
